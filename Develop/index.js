@@ -106,22 +106,28 @@ const questions = [
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
-        const readmeMarkdown = generateMarkdown ({
+        const readmeMarkdown = reqMarkdown ({
             title: `${data.title}`,
             description: `${data.description}`,
             install: `${data.install}`,
             instructions: `${data.instructions}`,
             credit: `${data.credit}`,
             features: `${data.features}`,
-            contribute: `${contribute}`,
-            licensing: `${licensing}`,
-            username: `${username}`,
-            email:`${email}`,
+            contribute: `${data.contribute}`,
+            licensing: `${data.licensing}`,
+            username: `${data.username}`,
+            email:`${data.email}`,
             
         })
         console.log("Question prompts firing off!");
-    fs.appendFile('./dist/README.md', generateMarkdown({...data}));
-    });
+    fs.writeFile('README.md', readmeMarkdown, (err) => {
+        if (err) {
+                        console.log('Error! Error! Error!');
+                    } else {
+                        console.log('alright, alright, alright');
+                    }
+    })
+});
 }
 
 
