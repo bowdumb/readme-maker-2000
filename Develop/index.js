@@ -77,30 +77,7 @@ const questions = [
     
 ];
 
-// inquirer
-//     .prompt(questions)
-//     .then((data) => {
-//         console.log("Hi " + questions.username);
-//         const readTemplate = markdown ({
-//             title: `${data.title}`,
-//             description: `${data.description}`,
-//             install: `${data.install}`,
-//             instructions: `${data.instructions}`,
-//             credit: `${data.credit}`,
-//             features: `${data.features}`,
-//             contribute: `${contribute}`,
-//             licensing: `${licensing}`,
-//             username: `${username}`,
-//             email:`${email}`,
-// //         })
-//     fs.appendFile('README.md',readTemplate, (error) => {
-//         if (error) {
-//             console.log('Error! Error! Error!');
-//         } else {
-//             console.log('alright, alright, alright');
-//         }
-//     });
-// console.log(responses)
+
 
 // TODO: Create a function to initialize app
 function init() {
@@ -119,12 +96,12 @@ function init() {
             email:`${data.email}`,
             
         })
-        console.log("Question prompts firing off!");
-    fs.writeFile('README.md', readmeMarkdown, (err) => {
-        if (err) {
+        console.log("Generating README.md...");
+    fs.writeFile('README.md', readmeMarkdown, (error) => {
+        if (error) {
                         console.log('Error! Error! Error!');
                     } else {
-                        console.log('alright, alright, alright');
+                        console.log('Alright, alright, alright!');
                     }
     })
 });
