@@ -4,6 +4,7 @@ const fs = require('fs');
 const reqMarkdown = require('./utils/generateMarkdown.js');
 
 
+
 // The questions variable contains an array of questions for user input in order to create the values to be written to their README.
 const questions = [ 
     
@@ -93,10 +94,16 @@ function init() {
             contribute: `${data.contributions}`,
             licensing: `${data.licensing}`,
             username: `${data.username}`,
-            email:`${data.contact}`,
+            contact:`${data.contact}`,
             
         })
         console.log("Generating README.md...");
+   writeToFile('README.md', readmeMarkdown)
+    });
+}
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, readmeMarkdown) {
     fs.writeFile('README.md', readmeMarkdown, (error) => {
         if (error) {
                         console.log('Error! Error! Error!');
@@ -104,11 +111,6 @@ function init() {
                         console.log('Alright, alright, alright!');
                     }
     })
-});
-}
+};
 
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-    
 init();

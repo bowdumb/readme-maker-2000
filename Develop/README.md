@@ -2,11 +2,11 @@
   
   ## Title
 
-  
+  README BAYBAY
 
   ## Description
 
-  N/A
+  IT SLAPS BOO
 
   ## Table of Contents
 
@@ -30,21 +30,21 @@
 
   ## Installation
 
-  N/A
+  JUST DO IT GURL
 
   ## Usage
 
-  N/A
+  GET IN THERE SON
 
 
 
   ## Features
 
-  N/A
+  it's slick dawg
 
   ## Contribute
 
-  N/A
+  Nahhhh son
 
  
   ## GitHub
@@ -53,7 +53,7 @@
 
   ## Credits
 
-  N/A
+  GAWWWWDDDDD
 
   ## Contact
 
@@ -61,5 +61,5 @@
 
   ## Licensing
 
-  
+  BSD LIcense, 2-clause
   
