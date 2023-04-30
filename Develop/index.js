@@ -80,7 +80,7 @@ const questions = [
 
 
 
-// TODO: Create a function to initialize app
+// This function initializes the inquirer prompts, passing the questions array as an argument within the .prompt parameters.
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
@@ -102,7 +102,7 @@ function init() {
     });
 }
 
-// TODO: Create a function to write README file
+// This function uses the File System module of node.js to write the README.md file. The README.md file will be overwritten if one currently exists.
 function writeToFile(fileName, readmeMarkdown) {
     fs.writeFile('README.md', readmeMarkdown, (error) => {
         if (error) {
@@ -112,5 +112,5 @@ function writeToFile(fileName, readmeMarkdown) {
                     }
     })
 };
-
+// By calling function init() here, we are able to initialize our Inquirer prompts by invoking 'node index.js' in the terminal.
 init();

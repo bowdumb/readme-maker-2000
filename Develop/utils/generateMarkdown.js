@@ -14,11 +14,11 @@ function renderLicenseSection(license) {}
 function generateMarkdown(readmeMarkdown) {
   return `
   
-  ## Title
+  # Title
 
   ${readmeMarkdown.title}
 
-  ## Description
+  # Description
 
   ${readmeMarkdown.description}
 
