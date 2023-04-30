@@ -19,6 +19,7 @@ const questions = [
         name: "description",
         default: "N/A"
     },
+    
     {
         type: "input",
         message: "What steps are necessary to install this project?",
@@ -28,22 +29,15 @@ const questions = [
     },
     {
         type: "input",
-        message: "What are some instructions and examples for use of this project?",
+        message: "What are some instructions and examples for the use of this project?",
         name: "instructions",
         default: "N/A"
 
     },
     {
         type: "input",
-        message: "Is there anyone you would like to credit for their involvement in this project?",
+        message: "Is there anyone else's contribution to this project that you would like to give credit to?",
         name: "credit",
-        default: "N/A"
-
-    },
-    {
-        type: "input",
-        message: "What are some core features of this project?",
-        name: "features",
         default: "N/A"
 
     },
@@ -55,10 +49,19 @@ const questions = [
 
     },
     {
+
+        type:"input",
+        message: "What measures for conducting tests on your codebase exist, and how can they be run?",
+        name: "test",
+        default: "N/A"
+
+    },
+    {
         type: "checkbox",
         message: "What licensing applies to this project?",
         choices: ["Unlicensed", "Apache License 2.0", "GPL License/General Public License v3.0", "BSD LIcense, 2-clause", "BSD LIcense, 3-clause", "BSD LIcense, 4-clause"],
-        name: "licensing"
+        name: "licensing",
+        default: "No license selected: all rights reserved by the owner."
 
     },
     {
@@ -71,8 +74,8 @@ const questions = [
     {
     
         type: "input",
-        message: "Is there an email address you would like to associate with this project?",
-        name: "email"
+        message: "Is there an email address you would like to have questions regarding this project directed to?",
+        name: "questions"
     },
     
 ];
@@ -93,11 +96,14 @@ function init() {
             contribute: `${data.contribute}`,
             licensing: `${data.licensing}`,
             username: `${data.username}`,
-            email:`${data.email}`,
+            questions:`${data.questions}`,
+            test:`${data.test}`,
             
         })
         console.log("Generating README.md...");
-    fs.writeFile('README.md', readmeMarkdown, (error) => {
+
+        // writeToFile();
+    fs.appendFile('README.md', readmeMarkdown, (error) => {
         if (error) {
                         console.log('Error! Error! Error!');
                     } else {
@@ -105,10 +111,17 @@ function init() {
                     }
     })
 });
-}
+
 
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {
-    
+//     fs.appendFile('README.md', readmeMarkdown, (error) => {
+//         if (error) {
+//                         console.log('Error! Error! Error!');
+//                     } else {
+//                         console.log('Alright, alright, alright!');
+//                     }
+//     })
+// }
 init();
