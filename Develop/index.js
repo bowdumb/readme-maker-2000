@@ -67,7 +67,7 @@ const questions = [
     {
         type: "checkbox",
         message: "What licensing applies to this project?",
-        choices: ["Unlicensed", "Apache License 2.0", "GPL License/General Public License v3.0", "BSD License, 2-clause", "BSD License, 3-clause", "The MIT License"],
+        choices: ["The Unlicense", "Apache License 2.0", "GPL License/General Public License v3.0", "BSD License, 2-clause", "BSD License, 3-clause", "The MIT License"],
         name: "licensing"
 
     },
