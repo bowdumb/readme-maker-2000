@@ -6,11 +6,11 @@
 
   ## Licensing
 
-  GPL License/General Public License v3.0
+  The MIT License
   
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  <a href=https://www.gnu.org/licenses/gpl-3.0>GPL License/General Public License v3.0</a>
+  <a href=https://opensource.org/license/mit/>The MIT License Documentation</a>
 
   
   ## Description
