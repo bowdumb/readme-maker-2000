@@ -2,13 +2,13 @@
   
   # Title
 
-  README 2000
+  
 
   ## Description
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-  This project generates sexy README markdown documents dynamically based on user input
+  N/A
 
 
   ## Table of Contents
@@ -40,7 +40,6 @@
   N/A
 
 
-
   ## Features
 
   N/A
@@ -49,10 +48,9 @@
 
   N/A
 
- 
   ## GitHub
 
-  <a href="https://www.github.com/" target="_blank">Follow this link to visit 's GitHub profile</a>
+  <a href="https://www.github.com/claxCode" target="_blank">Follow this link to visit claxCode's GitHub profile</a>
 
   ## Credits
 
@@ -60,9 +58,9 @@
 
   ## Contact
 
-  
+  yes
 
   ## Licensing
 
-  The MIT License
+  GPL License/General Public License v3.0
   

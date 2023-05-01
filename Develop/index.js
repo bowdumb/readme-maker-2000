@@ -23,14 +23,14 @@ const questions = [
     },
     {
         type: "input",
-        message: "What steps are necessary to install this project?",
+        message: "What steps are necessary to install this application?",
         name: "install",
         default: "N/A"
 
     },
     {
         type: "input",
-        message: "What are some instructions or examples for the usage of this project?",
+        message: "What are some instructions or examples for the usage of this application?",
         name: "instructions",
         default: "N/A"
 
@@ -44,7 +44,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "What are some core features of this project?",
+        message: "What are some core features of this application?",
         name: "features",
         default: "N/A"
 
@@ -53,6 +53,14 @@ const questions = [
         type: "input",
         message: "Are there ways in which others can help contribute to this project?",
         name: "contributions",
+        default: "N/A"
+
+    },
+    {
+
+        type: "input",
+        message: "What measures do you have in place to perform tests on your application?",
+        name: "tests",
         default: "N/A"
 
     },
@@ -67,14 +75,16 @@ const questions = [
 
         type: "input",
         message:"Please enter your GitHub username to continue.",
-        name: "username"
+        name: "username",
+        default: "N/A"
     
     },
     {
     
         type: "input",
         message: "Is there an email address or alternative method of contact you would like to associate with this project?",
-        name: "contact"
+        name: "contact",
+        default: "N/A"
     },
 
 ];
@@ -98,6 +108,7 @@ function init() {
             licensing: `${data.licensing}`,
             username: `${data.username}`,
             contact:`${data.contact}`,
+            tests: `${data.tests}`
             
         })
         console.log("Generating README.md...");

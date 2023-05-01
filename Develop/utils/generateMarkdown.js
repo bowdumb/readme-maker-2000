@@ -19,10 +19,13 @@ function renderLicenseBadge(license) {
   if(license === "The MIT License") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
   }
-  if (license === "") {
+  if (license === "Unlicensed") {
     return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
   }
-  
+  if(license === "") {
+  return "";
+  }
+
   };
   
   
@@ -83,7 +86,6 @@ function generateMarkdown(readmeMarkdown) {
   ${readmeMarkdown.instructions}
 
 
-
   ## Features
 
   ${readmeMarkdown.features}
@@ -92,7 +94,6 @@ function generateMarkdown(readmeMarkdown) {
 
   ${readmeMarkdown.contribute}
 
- 
   ## GitHub
 
   <a href="https://www.github.com/${readmeMarkdown.username}" target="_blank">Follow this link to visit ${readmeMarkdown.username}'s GitHub profile</a>
