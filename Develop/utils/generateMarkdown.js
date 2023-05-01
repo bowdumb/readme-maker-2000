@@ -1,6 +1,32 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+
+
+function renderLicenseBadge(license) {
+  
+  if(license === "Apache License 2.0") {
+    return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+  }
+  if(license === "GPL License/General Public License v3.0") {
+    return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+  }
+  if(license === "BSD License, 2-clause") {
+    return "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)"
+  }
+  if(license === "BSD License, 3-clause") {
+    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+  }
+  if(license === "The MIT License") {
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+  }
+  if (license === "") {
+    return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+  }
+  
+  };
+  
+  
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -10,7 +36,10 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+
+// The generateMarkdown function uses readmeMarkdown as a parameter, and provides a template for how the README.md will format.
+// Below, template literals are used to inject their corresponding values as determined in the Inquirer prompts within the init function found in the index.js
+// file.
 function generateMarkdown(readmeMarkdown) {
   return `
   
@@ -18,9 +47,12 @@ function generateMarkdown(readmeMarkdown) {
 
   ${readmeMarkdown.title}
 
-  # Description
+  ## Description
+
+  ${renderLicenseBadge(readmeMarkdown.licensing)}
 
   ${readmeMarkdown.description}
+
 
   ## Table of Contents
 
@@ -81,3 +113,5 @@ function generateMarkdown(readmeMarkdown) {
 }
 
 module.exports = generateMarkdown;
+
+

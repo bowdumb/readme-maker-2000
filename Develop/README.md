@@ -1,12 +1,15 @@
 
   
-  ## Title
+  # Title
 
-  README BAYBAY
+  README 2000
 
   ## Description
 
-  IT SLAPS BOO
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  This project generates sexy README markdown documents dynamically based on user input
+
 
   ## Table of Contents
 
@@ -30,36 +33,36 @@
 
   ## Installation
 
-  JUST DO IT GURL
+  N/A
 
   ## Usage
 
-  GET IN THERE SON
+  N/A
 
 
 
   ## Features
 
-  it's slick dawg
+  N/A
 
   ## Contribute
 
-  Nahhhh son
+  N/A
 
  
   ## GitHub
 
-  <a href="https://www.github.com/claxCode" target="_blank">Follow this link to visit claxCode's GitHub profile</a>
+  <a href="https://www.github.com/" target="_blank">Follow this link to visit 's GitHub profile</a>
 
   ## Credits
 
-  GAWWWWDDDDD
+  N/A
 
   ## Contact
 
-  undefined
+  
 
   ## Licensing
 
-  BSD LIcense, 2-clause
+  The MIT License
   

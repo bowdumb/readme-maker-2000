@@ -1,6 +1,7 @@
-// TODO: Include packages needed for this application
+// The two following variables enable access to the Inquirer npm as well as the File System module of node.js
 const inquirer = require('inquirer');
 const fs = require('fs');
+// By declaring the reqMarkdown as such we are able to incorporate the exported generateMarkdown.js file within this index.js file.
 const reqMarkdown = require('./utils/generateMarkdown.js');
 
 
@@ -58,7 +59,7 @@ const questions = [
     {
         type: "checkbox",
         message: "What licensing applies to this project?",
-        choices: ["Unlicensed", "Apache License 2.0", "GPL License/General Public License v3.0", "BSD LIcense, 2-clause", "BSD LIcense, 3-clause", "BSD LIcense, 4-clause"],
+        choices: ["Unlicensed", "Apache License 2.0", "GPL License/General Public License v3.0", "BSD License, 2-clause", "BSD License, 3-clause", "The MIT License"],
         name: "licensing"
 
     },
@@ -81,6 +82,8 @@ const questions = [
 
 
 // This function initializes the inquirer prompts, passing the questions array as an argument within the .prompt parameters.
+// By declaring the readMeMarkdown variable and assigning it to reqMarkdown we are able to later access the data captured by our Inquirer prompts
+// and access it when generating our README.md file within the generateMarkdown.js file.
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
