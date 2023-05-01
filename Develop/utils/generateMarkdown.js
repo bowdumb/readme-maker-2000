@@ -1,6 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
+// This function assesses the user-supplied license, and creates the corresponding license badge within the README.md document.
 
 function renderLicenseBadge(license) {
   
@@ -31,8 +29,7 @@ function renderLicenseBadge(license) {
   
 
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// This function assesses the user-supplied license, and creates a link to the corresponding license documentation within the README.md document.
 function renderLicenseLink(license) {
   if(license === "Apache License 2.0") {
     return "<a href=https://opensource.org/license/apache-2-0/>Apache License 2.0 Documentation</a>"
@@ -136,6 +133,7 @@ function generateMarkdown(readmeMarkdown) {
   ${readmeMarkdown.contact}`
 };
 
+//The code below enables the export of the generateMarkdown function so that it may be referenced within the index.js file.
 module.exports = generateMarkdown;
 
 
