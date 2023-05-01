@@ -6,11 +6,11 @@
 
   ## Licensing
 
-  The MIT License
+  Apache License 2.0
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-  <a href=https://opensource.org/license/mit/>The MIT License Documentation</a>
+  <a href=https://opensource.org/license/apache-2-0/>Apache License 2.0 Documentation</a>
 
   
   ## Description
@@ -69,6 +69,3 @@
   ## Contact
 
   N/A
-
- 
-  
