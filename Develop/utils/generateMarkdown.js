@@ -35,22 +35,22 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license === "Apache License 2.0") {
-    return "<a href=https://opensource.org/license/apache-2-0/>Apache License 2.0</a>"
+    return "<a href=https://opensource.org/license/apache-2-0/>Apache License 2.0 Documentation</a>"
   }
   if(license === "GPL License/General Public License v3.0") {
-    return "<a href=https://www.gnu.org/licenses/gpl-3.0>GPL License/General Public License v3.0</a>"
+    return "<a href=https://www.gnu.org/licenses/gpl-3.0>GPL License/General Public License v3.0 Documentation</a>"
   }
   if(license === "BSD License, 2-clause") {
-    return "<a href=https://opensource.org/license/bsd-2-clause/>BSD License, 2-clause</a>"
+    return "<a href=https://opensource.org/license/bsd-2-clause/>BSD License, 2-clause Documentation</a>"
   }
   if(license === "BSD License, 3-clause") {
-    return "<a href=https://opensource.org/license/bsd-3-clause/>BSD License, 3-clause</a>"
+    return "<a href=https://opensource.org/license/bsd-3-clause/>BSD License, 3-clause Documentation</a>"
   }
   if(license === "The MIT License") {
-    return "<a href=https://opensource.org/license/mit/>The MIT License</a>"
+    return "<a href=https://opensource.org/license/mit/>The MIT License Documentation</a>"
   }
   if (license === "The Unlicense") {
-    return "<a href=https://unlicense.org/>The Unlicense</a>"
+    return "<a href=https://unlicense.org/>The Unlicense Documentation</a>"
   }
   if(license === "") {
   return "";
