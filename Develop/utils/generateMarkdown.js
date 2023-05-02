@@ -58,7 +58,7 @@ function renderLicenseLink(license) {
 
 
 // The generateMarkdown function uses readmeMarkdown as a parameter, and provides a template for how the README.md will format.
-// Below, template literals are used to inject their corresponding values as determined in the Inquirer prompts within the init function found in the index.js
+// Below, template literals are used to inject their corresponding values as strings and as determined in the Inquirer prompts within the init function found in the index.js
 // file.
 function generateMarkdown(readmeMarkdown) {
   return `
@@ -94,9 +94,9 @@ function generateMarkdown(readmeMarkdown) {
 
   [Credits](#credits)
 
-  [Contact](#contact)
-
   [Licensing](#licensing)
+
+  [Questions](#questions)
 
 **************************
 
@@ -129,12 +129,10 @@ function generateMarkdown(readmeMarkdown) {
 
   ${readmeMarkdown.credit}
 
-  ## Contact
+  ## Questions?
 
-  ${readmeMarkdown.contact}`
+  I can receive questions regarding this application via email at: <a href=mailto:${readmeMarkdown.questions}>this link</a>`
 };
 
 //The code below enables the export of the generateMarkdown function so that it may be referenced within the index.js file.
 module.exports = generateMarkdown;
-
-

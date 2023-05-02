@@ -82,8 +82,8 @@ const questions = [
     {
     
         type: "input",
-        message: "Is there an email address or alternative method of contact you would like to associate with this project?",
-        name: "contact",
+        message: "Is there an email address or alternative method of contact you would like to provide in order to receive questions regarding this project?",
+        name: "questions",
         default: "N/A"
     },
 
@@ -107,7 +107,7 @@ function init() {
             contribute: `${data.contributions}`,
             licensing: `${data.licensing}`,
             username: `${data.username}`,
-            contact:`${data.contact}`,
+            questions:`${data.questions}`,
             tests: `${data.tests}`
             
         })
