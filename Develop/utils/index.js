@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 // By declaring the reqMarkdown as such we are able to incorporate the exported generateMarkdown.js file within this index.js file.
-const reqMarkdown = require('./utils/generateMarkdown.js');
+const reqMarkdown = require('./generateMarkdown.js');
 
 
 

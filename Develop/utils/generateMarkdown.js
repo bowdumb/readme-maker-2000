@@ -65,8 +65,10 @@ function generateMarkdown(readmeMarkdown) {
   
   # Title
 
-  ${readmeMarkdown.title}
+  ### ${readmeMarkdown.title}
 
+  **************************
+  
   ## Licensing
 
   ${readmeMarkdown.licensing}
@@ -79,6 +81,8 @@ function generateMarkdown(readmeMarkdown) {
   ## Description
 
   ${readmeMarkdown.description}
+
+  **************************
 
   ## Table of Contents
 
